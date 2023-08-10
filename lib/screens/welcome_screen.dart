@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:health_care/screens/login_screen.dart';
+import 'package:health_care/widgets/navbar_roots.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
@@ -20,7 +21,8 @@ class WelcomeScreen extends StatelessWidget {
               alignment: Alignment.centerRight,
               child: TextButton(
                 onPressed: () {
-                  // Navigator.push(context, MaterialPageRoute(builder: ((context) => ));
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: ((context) => NavBarRoots())));
                 },
                 child: const Text(
                   'SKIP',
@@ -28,10 +30,13 @@ class WelcomeScreen extends StatelessWidget {
                 ),
               ),
             ),
-            const SizedBox(height: 50.0),
+            const SizedBox(height: 10.0),
             Padding(
               padding: const EdgeInsets.all(20),
-              child: Image.asset("images/doctors.jpeg"),
+              child: Image.asset(
+                "images/doctors.jpeg",
+                height: 200,
+              ),
             ),
             const SizedBox(height: 50),
             const Text(
