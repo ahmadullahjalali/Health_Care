@@ -52,7 +52,9 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
                 children: [
                   InkWell(
                     onTap: () {
-                      _buttonIndex = 0;
+                      setState(() {
+                        _buttonIndex = 0;
+                      });
                     },
                     child: Container(
                       padding: const EdgeInsets.symmetric(
@@ -76,7 +78,9 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
                   ),
                   InkWell(
                     onTap: () {
-                      _buttonIndex = 1;
+                      setState(() {
+                        _buttonIndex = 1;
+                      });
                     },
                     child: Container(
                       padding: const EdgeInsets.symmetric(
@@ -100,7 +104,9 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
                   ),
                   InkWell(
                     onTap: () {
-                      _buttonIndex = 2;
+                      setState(() {
+                        _buttonIndex = 2;
+                      });
                     },
                     child: Container(
                       padding: const EdgeInsets.symmetric(
@@ -122,11 +128,11 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
                       ),
                     ),
                   ),
-                  const SizedBox(height: 30),
-                  _scheduleWidgets[_buttonIndex],
                 ],
               ),
-            )
+            ),
+            const SizedBox(height: 30),
+            _scheduleWidgets[_buttonIndex],
           ],
         ),
       ),

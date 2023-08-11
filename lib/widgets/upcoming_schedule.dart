@@ -23,8 +23,8 @@ class UpcomingSchedule extends StatelessWidget {
             decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.circular(10),
-              boxShadow: [
-                const BoxShadow(
+              boxShadow: const [
+                BoxShadow(
                   color: Colors.black12,
                   blurRadius: 4,
                   spreadRadius: 2,
@@ -174,8 +174,8 @@ class UpcomingSchedule extends StatelessWidget {
             decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.circular(10),
-              boxShadow: [
-                const BoxShadow(
+              boxShadow: const [
+                BoxShadow(
                   color: Colors.black12,
                   blurRadius: 4,
                   spreadRadius: 2,
@@ -325,8 +325,8 @@ class UpcomingSchedule extends StatelessWidget {
             decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.circular(10),
-              boxShadow: [
-                const BoxShadow(
+              boxShadow: const [
+                BoxShadow(
                   color: Colors.black12,
                   blurRadius: 4,
                   spreadRadius: 2,

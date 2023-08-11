@@ -59,6 +59,51 @@ class ChatScreen extends StatelessWidget {
         padding:
             const EdgeInsets.only(top: 20, left: 15, right: 15, bottom: 80),
         itemBuilder: (context, index) => const ChatSample(),
+        itemCount: 10,
+      ),
+      bottomSheet: Container(
+        height: 65,
+        decoration: const BoxDecoration(color: Colors.white, boxShadow: [
+          BoxShadow(color: Colors.black12, blurRadius: 10, spreadRadius: 2),
+        ]),
+        child: Row(
+          children: [
+            const Padding(
+              padding: EdgeInsets.only(left: 8),
+              child: Icon(
+                Icons.add,
+                size: 30,
+              ),
+            ),
+            const Padding(
+              padding: EdgeInsets.only(left: 5),
+              child: Icon(
+                Icons.emoji_emotions_outlined,
+                size: 30,
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 10),
+              child: Container(
+                alignment: Alignment.centerRight,
+                width: MediaQuery.of(context).size.width / 1.5,
+                child: TextFormField(
+                  decoration: const InputDecoration(
+                      hintText: "Type a message", border: InputBorder.none),
+                ),
+              ),
+            ),
+            const Spacer(),
+            const Padding(
+              padding: EdgeInsets.only(right: 10),
+              child: Icon(
+                Icons.send,
+                size: 30,
+                color: Colors.grey,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
