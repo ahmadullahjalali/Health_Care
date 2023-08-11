@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:health_care/screens/message_screen.dart';
+import 'package:health_care/screens/schedul_screen.dart';
 import 'package:health_care/screens/setting_screen.dart';
 import '../screens/home_screen.dart';
 
@@ -16,9 +18,9 @@ class _NavBarRootsState extends State<NavBarRoots> {
     // Home Screen
     HomeScreen(),
     // Message screen
-    Container(),
+    MessageScreen(),
     // Schedule screen
-    Container(),
+    ScheduleScreen(),
     // Setting screen
     SettingScreen(),
   ];
